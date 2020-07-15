@@ -2,7 +2,6 @@ package com.example.softexpert.ui.cars.presenters;
 
 
 
-import com.example.softexpert.data.models.CarDataModel;
 import com.example.softexpert.domain.Car;
 import com.example.softexpert.domain.NetWorkHandler;
 import com.example.softexpert.ui.cars.CarsMVP;
@@ -10,7 +9,6 @@ import java.util.List;
 import io.reactivex.Observable;
 import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 
@@ -20,7 +18,6 @@ public class GetCarsPresenter implements CarsMVP.GetCarsPresenter{
     CarsMVP.CarsView mCarsView;
     CarsMVP.CarsModel mCarsModel;
     NetWorkHandler mNetWorkHandler;
-    CompositeDisposable mCompositeDisposable;
 
     Observable<List<Car>> res;
     int page=1;
@@ -29,7 +26,6 @@ public class GetCarsPresenter implements CarsMVP.GetCarsPresenter{
     {
         this.mCarsModel = _CarsModel;
         mNetWorkHandler = _NetWorkHandler;
-        mCompositeDisposable = new CompositeDisposable();
     }
 
     @Override

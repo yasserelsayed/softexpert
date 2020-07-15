@@ -76,7 +76,6 @@ public class MainActivity extends AppCompatActivity implements CarsMVP.CarsView 
           mCarsRecycler.notifyDataSetChanged();
           mGetCarsPresenter.getCars();
         });
-        mSwipeRefreshLayout.setRefreshing(true);
         mCarsRecycler  = new CarsRecycler(mGetCarsPresenter);
         rclCars.setLayoutManager(new LinearLayoutManager(this));
         rclCars.setAdapter(mCarsRecycler);
