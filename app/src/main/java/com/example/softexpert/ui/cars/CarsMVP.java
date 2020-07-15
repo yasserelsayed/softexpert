@@ -9,7 +9,6 @@ import io.reactivex.Observable;
 public interface CarsMVP {
     interface CarsView {
         void setCars(List<Car> lstCars);
-        void reset();
         void showNotification(Integer resNum);
         void showNotification(String notification);
         void showLoadingPopup();

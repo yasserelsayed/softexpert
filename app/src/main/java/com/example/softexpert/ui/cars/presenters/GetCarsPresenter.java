@@ -95,6 +95,7 @@ public class GetCarsPresenter implements CarsMVP.GetCarsPresenter{
     }
 
     public void unsubscribe(){
+        if(res!=null)
         res.unsubscribeOn(Schedulers.io());
     }
 

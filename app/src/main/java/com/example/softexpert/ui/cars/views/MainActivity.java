@@ -94,10 +94,6 @@ public class MainActivity extends AppCompatActivity implements CarsMVP.CarsView 
         }
     }
 
-    @Override
-    public void reset() {
-
-    }
 
     @Override
     public void showNotification(Integer resNum) {
@@ -122,7 +118,7 @@ public class MainActivity extends AppCompatActivity implements CarsMVP.CarsView 
     @Override
     public void showNetworkError() {
         snackbar  = Snackbar
-                .make(appContainer, getText(R.string.txt_please_connect_internet), Snackbar.LENGTH_INDEFINITE)
+                .make(appContainer, getText(R.string.txt_please_connect_internet), Snackbar.LENGTH_LONG)
                 .setAction(getText(R.string.txt_retry), view -> {
                     finish();
                     startActivity(getIntent());
