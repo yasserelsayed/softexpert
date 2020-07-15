@@ -10,7 +10,7 @@ __________________________
 
 # APPLICATION ARCHITECTURE 
   
-- data -> data access layer  (represent mvp model layer)
+- data -> data access layer  (represent mvp models layer)
 - di -> dependency injection, application modules, components scopes
 - domain -> data conversion, business layer
 - ui -> user interface logic, presenters
