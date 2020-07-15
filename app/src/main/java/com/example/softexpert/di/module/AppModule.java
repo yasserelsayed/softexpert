@@ -1,9 +1,8 @@
 package com.example.softexpert.di.module;
 
-import com.example.softexpert.data.CarsRepository;
 import com.example.softexpert.data.network.DataService;
 import com.example.softexpert.domain.App;
-import com.example.softexpert.domain.NetWorkHandler;
+import com.example.softexpert.util.NetWorkHandler;
 import com.example.softexpert.util.Constants;
 
 import javax.inject.Singleton;

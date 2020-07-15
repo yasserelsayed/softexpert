@@ -3,7 +3,7 @@ package com.example.softexpert.ui.cars.presenters;
 
 
 import com.example.softexpert.domain.Car;
-import com.example.softexpert.domain.NetWorkHandler;
+import com.example.softexpert.util.NetWorkHandler;
 import com.example.softexpert.ui.cars.CarsMVP;
 import java.util.List;
 import io.reactivex.Observable;

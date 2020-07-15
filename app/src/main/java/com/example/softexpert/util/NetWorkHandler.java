@@ -1,4 +1,4 @@
-package com.example.softexpert.domain;
+package com.example.softexpert.util;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

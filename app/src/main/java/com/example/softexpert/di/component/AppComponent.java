@@ -2,7 +2,7 @@ package com.example.softexpert.di.component;
 
 import com.example.softexpert.data.network.DataService;
 import com.example.softexpert.di.module.AppModule;
-import com.example.softexpert.domain.NetWorkHandler;
+import com.example.softexpert.util.NetWorkHandler;
 
 import javax.inject.Singleton;
 
