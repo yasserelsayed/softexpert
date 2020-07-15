@@ -73,7 +73,7 @@ public class CarsRecycler extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
             } else row.imgCarPhoto.setImageResource(R.drawable.image_background);
 
             row.txtBrand.setText(mCar.getBrand());
-            row.txtConstructionYear.setText(mCar.getConstractionYear().toString());
+            row.txtConstructionYear.setText(mCar.getConstructionYear());
             row.chkIsUsed.setChecked(mCar.getIsUsed());
         }
     }

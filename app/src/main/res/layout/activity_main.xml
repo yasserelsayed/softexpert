@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.cars.views.MainActivity"
-    android:id="@+id/appContainer"
-    android:padding="@dimen/default_padding">
+    android:id="@+id/appContainer">
      <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
          android:id="@+id/swipeContainer"
          android:layout_width="match_parent"

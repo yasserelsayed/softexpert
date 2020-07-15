@@ -13,9 +13,9 @@ public class CarDataModel implements Serializable {
     @SerializedName("brand")
     @Expose
     public String brand;
-    @SerializedName("constractionYear")
+    @SerializedName("constructionYear")
     @Expose
-    public Integer constractionYear;
+    public String constructionYear;
     @SerializedName("imageUrl")
     @Expose
     public String image;

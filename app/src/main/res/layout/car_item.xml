@@ -3,15 +3,18 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/item_height"
-    android:padding="@dimen/list_item_padding"
+    android:layout_height="@dimen/list_item_height"
+    android:layout_marginStart="@dimen/default_margin"
+    android:layout_marginEnd="@dimen/default_margin"
+    android:layout_marginTop="@dimen/list_item_margin"
+    android:layout_marginBottom="@dimen/list_item_margin"
     android:id="@+id/constContainer">
 
     <ImageView
         android:scaleType="centerCrop"
         android:id="@+id/imgCarPhoto"
-        android:layout_width="@dimen/image_size"
-        android:layout_height="@dimen/image_size"
+        android:layout_width="@dimen/image_size_width"
+        android:layout_height="@dimen/image_size_height"
         android:background="@drawable/image_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,12 +24,13 @@
         android:id="@+id/txtBrand"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/default_margin"
+        android:layout_marginStart="16dp"
         android:text=""
-        android:textColor="@android:color/darker_gray"
-        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtConstructionYear"
         app:layout_constraintStart_toEndOf="@+id/imgCarPhoto"
-        app:layout_constraintTop_toBottomOf="@+id/chkIsUsed" />
+        app:layout_constraintTop_toTopOf="@+id/imgCarPhoto" />
 
     <TextView
         android:id="@+id/txtConstructionYear"
@@ -34,17 +38,21 @@
         android:layout_height="wrap_content"
         android:text=""
         android:textColor="@android:color/darker_gray"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCarPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/txtBrand"
         app:layout_constraintStart_toStartOf="@+id/txtBrand"
-        app:layout_constraintTop_toBottomOf="@+id/txtBrand" />
+ />
 
     <androidx.appcompat.widget.AppCompatCheckBox
-        android:enabled="false"
         android:id="@+id/chkIsUsed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:enabled="false"
         android:text="@string/txt_isused"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

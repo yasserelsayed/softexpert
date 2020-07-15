@@ -26,10 +26,8 @@ public class Car {
         return this.mCarDataModel.isUsed;
     }
 
-    public Integer getConstractionYear(){
-        if(this.mCarDataModel.constractionYear!=null)
-        return this.mCarDataModel.constractionYear;
-        else  return 0;
+    public String getConstructionYear(){
+        return this.mCarDataModel.constructionYear;
     }
 
 
