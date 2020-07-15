@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height"
+    android:padding="@dimen/list_item_padding"
+    android:id="@+id/constContainer">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/imgCarPhoto"
+        android:layout_width="@dimen/image_size"
+        android:layout_height="@dimen/image_size"
+        android:background="@drawable/image_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:text=""
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imgCarPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/chkIsUsed" />
+
+    <TextView
+        android:id="@+id/txtConstructionYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtBrand"
+        app:layout_constraintTop_toBottomOf="@+id/txtBrand" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:enabled="false"
+        android:id="@+id/chkIsUsed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_isused"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
