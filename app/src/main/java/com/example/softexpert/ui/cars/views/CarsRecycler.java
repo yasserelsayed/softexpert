@@ -59,7 +59,7 @@ public class CarsRecycler extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
     public void onBindViewHolder(RecyclerView.ViewHolder  holder, int position) {
 
         if (holder instanceof ListItemViewLoader)
-            mGetCarsPresenter.getCars();
+            mGetCarsPresenter.submit();
         else if(holder instanceof ListItemViewHolder) {
             CarsRecycler.ListItemViewHolder row = (CarsRecycler.ListItemViewHolder)holder;
             Car mCar = Data.get(position);

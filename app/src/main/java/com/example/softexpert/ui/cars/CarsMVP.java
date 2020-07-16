@@ -19,7 +19,7 @@ public interface CarsMVP {
 
     interface GetCarsPresenter{
          void setView(CarsMVP.CarsView mCarsView);
-         void getCars();
+         void submit();
          int getPage();
          void unsubscribe();
          void resetPaging();

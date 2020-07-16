@@ -34,7 +34,7 @@ public class GetCarsPresenter implements CarsMVP.GetCarsPresenter{
     }
 
     @Override
-    public void getCars() {
+    public void submit() {
         if(!mNetWorkHandler.isNetworkConnected()){
             mCarsView.hideLoadingPopup();
             mCarsView.showNetworkError();

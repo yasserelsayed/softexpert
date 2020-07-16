@@ -11,7 +11,6 @@ import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
 import android.os.Bundle;
-import android.text.Layout;
 import android.widget.Toast;
 
 import com.example.softexpert.R;
@@ -68,13 +67,13 @@ public class MainActivity extends AppCompatActivity implements CarsMVP.CarsView 
                 .build();
         mMainActivityComponent.inject(this);
         mGetCarsPresenter.setView(this);
-        mGetCarsPresenter.getCars();
+        mGetCarsPresenter.submit();
 
         mSwipeRefreshLayout.setOnRefreshListener(() -> {
           mGetCarsPresenter.resetPaging();
           mCarsRecycler.Data.clear();
           mCarsRecycler.notifyDataSetChanged();
-          mGetCarsPresenter.getCars();
+          mGetCarsPresenter.submit();
         });
         mCarsRecycler  = new CarsRecycler(mGetCarsPresenter);
         rclCars.setLayoutManager(new LinearLayoutManager(this));
